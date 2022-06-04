@@ -1,0 +1,214 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    /* adding background gradients */
+
+    background: #614385; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #614385, #516395); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #614385, #516395);
+
+    /* responsive body design */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.panel-1, .panel-2 {
+    
+
+    width: 60%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.8rem;
+    padding: 2rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+h1 {
+    margin: 1rem 0 4rem;
+    border-bottom: .2rem solid #fff;
+    padding-bottom: 2rem;
+}
+
+.title {
+    display: block;
+    font-variant: small-caps;
+    font-size: 4rem;
+}
+
+.sub_title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    text-transform: capitalize;
+}
+
+p.panel_1 {
+    font-size: 2rem;
+    margin: 0 0 3rem;
+    text-transform: uppercase;
+}
+
+#details {
+    font-size: 1.8rem;
+}
+
+/* common input design */
+input {
+    margin: 0 0 2rem;
+    width: 30rem;
+    height: 3rem;
+    padding: .5rem 1.5rem .5rem;
+    background: rgb(222, 227, 227);
+    transition: .3s;
+
+    border: none;
+    outline: none;
+}
+
+input:focus:not(input[type="submit"]) {
+    border: .3rem solid rgb(89, 0, 255);
+    background-color: #fff;
+}
+
+input[name="first_name"] {
+    width: 35rem;
+}
+
+input[name="last_name"] {
+    width: 30rem;
+}
+
+input[name="address"] {
+    width: 37.5rem;
+}
+
+input[type="email"] {
+    width: 45rem;
+}
+
+input[type="date"] {
+    width:17rem;
+    font-size: 1.6rem;
+    margin: 4rem 0 5rem;
+}
+
+input[type="submit"] {
+    width: 15rem;
+    font-size: 1.8rem;
+    height: 4.5rem;
+    border-radius: 10rem;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 3rem 5rem #614385;
+    transform: translateY(-2px);
+    background: #614385;
+    color: white;
+    border: 1px solid white;
+}
+
+input[type="submit"]:active {
+    box-shadow: 0 1rem 2rem #614385;
+    transform: translateY(0);
+}
+
+
+/* common label design */
+label {
+    padding-right: 1rem;
+}
+
+
+
+
+/* Panel 2 Design */
+
+.panel-2 {
+    display: block;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+
+address {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+p.panel_2 {
+    font-size: 2.5rem;
+    font-variant: small-caps;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+div.age_clock {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.age_clock span {
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 0 1.5rem;
+}
+
+.img_box {
+    width: 25rem;
+    height: 25rem;
+    /* background: red; */
+    position: relative;
+    margin: 1rem auto;
+}
+
+img {
+    width: 15rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: rotation 5s infinite linear;
+    animation-delay: 0;
+}
+
+@keyframes rotation {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.d-none {
+    display: none;
+}
